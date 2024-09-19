@@ -1,0 +1,22 @@
+@use '../../app/globals.scss';
+
+button.button-component {
+  width: 100%;
+  padding: 24px 16px;
+
+  border: none;
+  border-radius: 8px;
+  background: globals.$blueGradient;
+
+  color: globals.$white;
+
+  &[data-style-type="secondary"] {
+    background: globals.$gray400;
+
+    color: globals.$black;
+  }
+
+  &[data-style-type="deletion"] {
+    background: globals.$redGradient;
+  }
+}

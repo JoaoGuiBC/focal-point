@@ -1,0 +1,54 @@
+@use '../../app/globals.scss';
+
+div.task-card-container {
+  display: flex;
+
+  padding: 1rem;
+
+  gap: 1rem;
+  align-items: center;
+
+  border: 1px dashed globals.$gray500;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: globals.$gray500;
+  }
+
+  button.check-button {
+    min-width: 1.5rem;
+    height: 1.5rem;
+
+    padding: 0;
+
+    background-color: transparent;
+    border-radius: 4px;
+    border: globals.$gray600 1px solid;
+
+    &[data-checked="true"] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: globals.$blue300;
+      border-radius: 4px;
+      border: globals.$blue500 1px solid;
+
+      svg {
+        width: 1.125rem;
+        height: 1.125rem;
+
+        color: globals.$blue500;
+      }
+    }
+  }
+
+  span {
+    margin-right: auto;
+
+    &[data-checked="true"] {
+      color: globals.$gray700;
+      text-decoration: line-through;
+    }
+  } 
+}

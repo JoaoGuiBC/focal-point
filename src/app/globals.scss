@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+$white: #ffffff;
+$black: #000000;
+
+$gray300: #EAECF0;
+$gray400: #E7EEFB;
+$gray500: #D7DDE9;
+$gray600: #B0BBD1;
+$gray700: #0000008A;
+$gray800: #1018282E;
+
+$blue300: #A0DCF6;
+$blue400: #53C0F0;
+$blue500: #0796D3;
+
+$red400: #F05353;
+$red500: #D30707;
+
+$blueGradient: linear-gradient(90deg, $blue500 0%, $blue400 100%);
+$redGradient: linear-gradient(90deg, $red500 0%, $red400 100%);
+
+* {
+  font: 400 1rem "Inter Tight";
+  letter-spacing: -0.02em;
+
+  transition: all .15s;
+}
+
+body {
+  padding: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}
